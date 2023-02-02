@@ -1,0 +1,116 @@
+@primary: grey;
+@header-color-link-item: #0a80f1;
+@header-color-menu-item: #121212;
+@main-color-background: #15b7f9;
+@main-color-grad-start: #14b1f8;
+@main-color-grad-end: #0978f0;
+@footer-color-background: #dfdfdf;
+@footer-color-title:#545454;
+@footer-color-text: #545454;
+@footer-color-special: #0a80f1;
+
+body {   
+    color: #05121F;
+    font-family: "Open Sans", Arial;
+    font-size: 16px;
+    font-weight: 400;
+
+    .obce-header{
+        padding: 20px 150px 0px 150px;
+
+        a{
+            margin-right: 20px;
+            vertical-align: baseline;
+            color: @header-color-link-item;
+            line-height: 2;
+            text-transform: none;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .dropdown{
+            display: inline-block;
+        }
+        .d-flex .input-group{
+            margin-right: 20px;
+        }
+    }
+
+    .obce-menu{
+        padding: 0 150px 20px 150px;
+
+        a{
+            margin-right: 20px;
+            color: @header-color-menu-item;
+            line-height: 1;
+            text-transform: none;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .obce-main{
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        color: #fff;
+        background: @main-color-background;
+        background: linear-gradient(to top,@main-color-grad-start 0, @main-color-grad-end 100%);
+
+        h2{
+            margin: 0 0 20px;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        input[type=text]{
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+    }
+
+    .obce-footer{
+        background-color: @footer-color-background;
+        padding: 30px 150px;
+       
+        ul{
+            margin-bottom: 10px;
+            list-style: none;
+            padding-left: 0; 
+
+            a{
+                color: @footer-color-text;
+                line-height: 1.5em;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+        
+        .footer-heading {
+            color: @footer-color-title;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 2.5rem;          
+        }
+
+        .footer-textblock{
+            padding-bottom: 20px;
+            color: @footer-color-text;
+
+            p, div, span{
+                margin: 0px;
+                font-size: 15px;
+                line-height: 1.5em;
+                font-weight: 400;
+            }
+        }
+        .text-special{
+            div, p, span, a{
+                color: @footer-color-special;  
+            }
+        }
+
+    }
+}
